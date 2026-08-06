@@ -19,10 +19,9 @@ Cobertura completa das 10 categorias do OWASP Top 10:2025.
 
 ## Livro completo (PDF)
 
-`livro/livro-owasp-top10-2025-php.pdf` — 240 páginas cobrindo as 10
+`livro-owasp-top10-2025-php.pdf` — 240 páginas cobrindo as 10
 categorias + 2 apêndices (sqlmap e Docker), com o código real de cada
-exemplo, explicações, instruções de teste e checklists detalhados. Fonte
-em AsciiDoc em `livro/` (editável no AsciidocFX). Veja `livro/README.md`.
+exemplo, explicações, instruções de teste e checklists detalhados. 
 
 ## Requisitos
 
