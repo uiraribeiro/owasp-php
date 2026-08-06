@@ -1,0 +1,10 @@
+{
+    "name": "exemplo/app-vulneravel",
+    "description": "Aplicação com dependência em versão conhecidamente vulnerável",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "acme/pagamentos": "1.2.0"
+    },
+    "minimum-stability": "stable"
+}

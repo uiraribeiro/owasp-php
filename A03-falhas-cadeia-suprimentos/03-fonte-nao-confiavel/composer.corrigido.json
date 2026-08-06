@@ -1,0 +1,10 @@
+{
+    "name": "exemplo/app-com-fonte-confiavel",
+    "description": "Aplicação usando apenas fontes oficiais e seguras (HTTPS)",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "acme/pagamentos": "^1.5"
+    },
+    "minimum-stability": "stable"
+}

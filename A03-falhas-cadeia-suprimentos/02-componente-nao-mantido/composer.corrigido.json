@@ -1,0 +1,10 @@
+{
+    "name": "exemplo/app-com-dependencias-ativas",
+    "description": "Aplicação usando componentes ativamente mantidos",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "acme/log-moderno": "^1.0"
+    },
+    "minimum-stability": "stable"
+}

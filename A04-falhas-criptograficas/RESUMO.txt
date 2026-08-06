@@ -1,0 +1,88 @@
+================================================================================
+MATERIAL DIDÁTICO EM PHP - OWASP A04:2025 CRYPTOGRAPHIC FAILURES
+================================================================================
+
+Data de Criação: 2025-08-05
+PHP Version: 8.5.8
+OpenSSL: Disponível
+
+================================================================================
+ESTRUTURA CRIADA
+================================================================================
+
+Diretório raiz: /Users/uiraribeiro/Documents/CURSO_OWASP/owasp-php-examples/A04-falhas-criptograficas/
+
+8 Subpastas (uma para cada tipo de falha criptográfica):
+  01. algoritmos-fracos (DES-ECB vs AES-256-GCM)
+  02. aleatoriedade-insuficiente (mt_rand vs random_bytes)
+  03. gestao-chaves (hardcoded vs variável de ambiente)
+  04. transporte-texto-claro (HTTP/GET vs HTTPS/POST)
+  05. hash-sem-salt (MD5 vs bcrypt)
+  06. iv-problematico (IV fixo vs IV aleatório)
+  07. certificado-nao-validado (SSL desabilitado vs SSL habilitado)
+  08. modo-criptografia-inadequado (ECB vs GCM)
+
+Cada subpasta contém:
+  - vulneravel.php: código com a falha criptográfica
+  - corrigido.php: código corrigido e seguro
+  - teste.php: testes automatizados que validam ambos
+
+Arquivo adicional:
+  - checklist.md: guia de code review com 8 itens de verificação
+
+================================================================================
+RESULTADOS DOS TESTES
+================================================================================
+
+Pasta 01 - Algoritmos Fracos:         5/5 testes passou ✓
+Pasta 02 - Aleatoriedade Insuficiente: 7/7 testes passou ✓
+Pasta 03 - Gestão de Chaves:          6/6 testes passou ✓
+Pasta 04 - Transporte em Texto Claro: 10/10 testes passou ✓
+Pasta 05 - Hash sem Salt:             10/10 testes passou ✓
+Pasta 06 - IV Problemático:           7/7 testes passou ✓
+Pasta 07 - Certificado não Validado:  7/7 testes passou ✓
+Pasta 08 - Modo Inadequado:           6/6 testes passou ✓
+
+TOTAL: 58/58 verificações passaram (100% sucesso)
+
+================================================================================
+CONVENÇÕES SEGUIDAS
+================================================================================
+
+✓ Todos os arquivos começam com: <?php\ndeclare(strict_types=1);\n\nnamespace
+✓ Comentários explicativos em PT-BR em todas as falhas e correções
+✓ Funções recebem parâmetros simples (strings/arrays)
+✓ Função demo() ativada quando executado diretamente
+✓ teste.php segue esqueleto único com contador de verificações
+✓ Sem dependências externas (apenas PHP built-in functions)
+✓ Nomes de pastas e arquivos em ASCII (sem acentos)
+
+================================================================================
+COMO USAR
+================================================================================
+
+1. Explorar uma falha específica:
+   $ cd 01-algoritmos-fracos
+   $ php vulneravel.php    # Demonstração da falha
+   $ php corrigido.php     # Demonstração da correção
+   $ php teste.php         # Validar ambas
+
+2. Rodar todos os testes:
+   $ cd /Users/uiraribeiro/Documents/CURSO_OWASP/owasp-php-examples/A04-falhas-criptograficas/
+   $ for dir in 01-* 02-* 03-* 04-* 05-* 06-* 07-* 08-*; do php "$dir/teste.php" || exit 1; done
+
+3. Usar como material de treinamento:
+   - Ler checklist.md para entender as falhas
+   - Revisar código em vulneravel.php (entender o problema)
+   - Revisar código em corrigido.php (aprender a correção)
+   - Rodar testes.php para validar o aprendizado
+
+================================================================================
+RECURSOS REFERENCIADOS
+================================================================================
+
+- OWASP Top 10 2025: https://owasp.org/Top10/2025/A04_2025-Cryptographic_Failures/
+- PHP Manual (openssl_encrypt, password_hash, random_bytes)
+- Práticas recomendadas de criptografia e segurança
+
+================================================================================

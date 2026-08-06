@@ -1,0 +1,10 @@
+{
+    "name": "exemplo/app-com-versao-fixada",
+    "description": "Aplicação com constraint de versão semântica específica",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "acme/pagamentos": "^1.5"
+    },
+    "minimum-stability": "stable"
+}

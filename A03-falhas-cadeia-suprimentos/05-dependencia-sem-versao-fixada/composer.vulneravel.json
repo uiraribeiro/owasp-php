@@ -1,0 +1,10 @@
+{
+    "name": "exemplo/app-com-versao-aberta",
+    "description": "Aplicação com constraint de versão totalmente aberta (não determinística)",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "acme/pagamentos": "*"
+    },
+    "minimum-stability": "dev"
+}

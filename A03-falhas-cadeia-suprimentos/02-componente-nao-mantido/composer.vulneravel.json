@@ -1,0 +1,10 @@
+{
+    "name": "exemplo/app-com-legado",
+    "description": "Aplicação usando componente abandonado/não mantido",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "acme/log-legado": "^2.0"
+    },
+    "minimum-stability": "stable"
+}

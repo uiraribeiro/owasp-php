@@ -1,0 +1,19 @@
+{
+    "name": "exemplo/app-com-fonte-nao-segura",
+    "description": "Aplicação instalando dependências de fonte não confiável",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://pacotes-nao-oficiais.exemplo.com"
+        },
+        {
+            "packagist.org": false
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "acme/pagamentos": "^1.5"
+    },
+    "minimum-stability": "stable"
+}

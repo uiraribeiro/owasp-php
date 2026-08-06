@@ -1,0 +1,15 @@
+{
+    "name": "exemplo/app-com-plugins-controlados",
+    "description": "Aplicação com allow-list explícita de plugins confiáveis",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "acme/pagamentos": "^1.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "acme/plugin-oficial": true
+        }
+    },
+    "minimum-stability": "stable"
+}

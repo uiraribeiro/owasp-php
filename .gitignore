@@ -1,0 +1,9 @@
+# Livro (PDF gerado + fontes AsciiDoc) - nao vai pro repositorio
+livro/
+
+# Slides (.pptx gerados + scripts geradores) - nao vai pro repositorio
+slides/
+
+# Artefatos comuns de SO/editor
+.DS_Store
+*.swp
